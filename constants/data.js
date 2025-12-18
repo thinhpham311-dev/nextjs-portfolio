@@ -304,7 +304,7 @@ export const PROJECTLIST_DATA = {
           title: 'Ecommerce Test Local',
           slug: 'ecommerce-test-local',
           path: '/projects/project-Ecommerce-Local.png',
-          src: "https://ecommerce-test-vert.vercel.app",
+          src: "https://react-shopping-cart-fawn.vercel.app/",
         },
         {
           title: 'Market Place',

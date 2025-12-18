@@ -29,7 +29,7 @@ const Avatar = ({ _w, _h, source }) => {
 
   return (
     <div
-      className="relative h-[400px] w-[400px] mx-auto rounded-full cursor-pointer"
+      className=" h-[400px] w-[400px] mx-auto rounded-full cursor-pointer"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >

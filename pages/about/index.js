@@ -43,12 +43,11 @@ const About = () => {
               animate="show"
               exit="hidden"
             >
-              I am a Web Developer with 3 years of experience, passionate about UX/UI and web performance. I use my skills to enhance visual design and improve user experiences across responsive websites.
-            </motion.p>
+              Web Developer with 3 years of experience specializing in building responsive websites. Passionate about UX/UI and web performance, with a strong focus on creating visually appealing and user-centered digital experiences.            </motion.p>
 
             <motion.form
               method="get"
-              action="/PhamTriThinh-0702895474-webdeveloper.pdf"
+              action="/PhamTriThinh-FrontEnd-3years.pdf"
               className="flex justify-center xl:justify-start gap-x-5"
               variants={fadeIn('down', 0.4)}
               initial="hidden"
@@ -81,8 +80,8 @@ const About = () => {
                   key={i}
                   onClick={() => setSelectedIndex(i)}
                   className={`cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0 ${selectedIndex === i
-                      ? 'text-accent after:!bg-accent after:w-full after:transition-all after:duration-300'
-                      : ''
+                    ? 'text-accent after:!bg-accent after:w-full after:transition-all after:duration-300'
+                    : ''
                     }`}
                 >
                   {item.title}

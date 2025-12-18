@@ -10,16 +10,16 @@ import { FaUserClock } from 'react-icons/fa';
 import { LoadingImage } from './Loading';
 import { PROJECTLIST_DATA } from '../constants';
 
+const projects = PROJECTLIST_DATA;
 const ProjectSlider = () => {
-  const slides = PROJECTLIST_DATA.slides;
-  const companyKeys = slides.map((slide) => slide.companyKey);
+  const companyKeys = projects.slides.map((slide) => slide.companyKey);
   const [selectedCompanyKey, setSelectedCompanyKey] = useState(companyKeys[0]);
 
-  const selectedSlide = slides.find((slide) => slide.companyKey === selectedCompanyKey);
+  const selectedSlide = projects.slides.find((slide) => slide.companyKey === selectedCompanyKey);
   const filteredImages = selectedSlide?.images || [];
 
   const getCompanyName = (key) =>
-    slides.find((slide) => slide.companyKey === key)?.companyName || 'Unknown';
+    projects.slides.find((slide) => slide.companyKey === key)?.companyName || 'Unknown';
 
   return (
     <div className="w-full max-w-[1400px] mx-auto px-4">
