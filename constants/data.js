@@ -281,36 +281,28 @@ export const PROJECTLIST_DATA = {
           slug: 'portfolio-profile',
           path: '/projects/project-Portfolio_Profile.png',
           src: "https://phamtrithinh-0702895474-fewebdeveloper.vercel.app",
+          github: "https://phamtrithinh-0702895474-fewebdeveloper.vercel.app/"
         },
         {
           title: 'Catalog Business Animation',
           slug: 'catalog-business-animation',
           path: '/projects/project-Magma_Clone.png',
           src: "https://catalog-business.vercel.app",
-        },
-        {
-          title: 'Chat Gpt Clone',
-          slug: 'chatGpt-clone',
-          path: '/projects/project-ChatGPT_Clone.png',
-          src: "https://chat-gpt-thinhpham.vercel.app/",
+          github: "https://catalog-business.vercel.app"
         },
         {
           title: 'PTT Movies',
           slug: 'ptt-movies',
           path: '/projects/project-React_movies.png',
-          src: "https://react-movie-five-delta.vercel.app/",
+          src: "https://react-movie-five-delta.vercel.app",
+          github: "https://github.com/thinhpham311-dev/react-movie-app"
         },
         {
           title: 'Ecommerce Test Local',
           slug: 'ecommerce-test-local',
           path: '/projects/project-React_Shopping_Cart.png',
-          src: "https://react-shopping-cart-fawn.vercel.app/",
-        },
-        {
-          title: 'Market Place',
-          slug: 'market-place',
-          path: '/projects/project-Market_Place.png',
-          src: "https://market-place-web-gilt.vercel.app/",
+          src: "https://react-shopping-cart-fawn.vercel.app",
+          github: "https://github.com/thinhpham311-dev/react-shopping-cart"
         },
       ],
     },
