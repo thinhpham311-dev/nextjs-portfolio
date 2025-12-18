@@ -297,13 +297,13 @@ export const PROJECTLIST_DATA = {
         {
           title: 'PTT Movies',
           slug: 'ptt-movies',
-          path: '/projects/project-PTT_Movies.png',
-          src: "https://pttmovies.vercel.app",
+          path: '/projects/project-React_movies.png',
+          src: "https://react-movie-five-delta.vercel.app/",
         },
         {
           title: 'Ecommerce Test Local',
           slug: 'ecommerce-test-local',
-          path: '/projects/project-Ecommerce-Local.png',
+          path: '/projects/project-React_Shopping_Cart.png',
           src: "https://react-shopping-cart-fawn.vercel.app/",
         },
         {
