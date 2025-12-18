@@ -287,8 +287,8 @@ export const PROJECTLIST_DATA = {
           title: 'Catalog Business Animation',
           slug: 'catalog-business-animation',
           path: '/projects/project-Magma_Clone.png',
-          src: "https://catalog-business.vercel.app",
-          github: "https://catalog-business.vercel.app"
+          src: "https://nextjs-landing-page-blond.vercel.app",
+          github: "https://github.com/thinhpham311-dev/nextjs-landing-page"
         },
         {
           title: 'PTT Movies',
