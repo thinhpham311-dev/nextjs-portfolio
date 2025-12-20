@@ -67,10 +67,10 @@ const Avatar = ({ _w, _h, source }) => {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <div className="flex gap-6">
+              <div className="flex gap-5">
                 {socialLinks.map(({ href, icon, label }, index) => (
                   <motion.a
-                    key={label}
+                    key={`${label}_${index}`}
                     href={href}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -84,7 +84,7 @@ const Avatar = ({ _w, _h, source }) => {
                       }
                     }}
                     exit={{ opacity: 0 }}
-                    className="transition-transform text-3xl text-white"
+                    className="transition-transform text-3xl text-white border border-white p-2 rounded-full hover:bg-white hover:text-black"
                   >
                     {icon}
                   </motion.a>
@@ -98,7 +98,7 @@ const Avatar = ({ _w, _h, source }) => {
                 animate={{ opacity: isHovered ? 1 : 0, y: isHovered ? 0 : 10 }}
                 exit={{ opacity: 0, y: 10 }}
                 transition={{ duration: 0.3, delay: 0.3 }}
-                className="mt-4 px-5 py-2 rounded-full bg-white text-black font-semibold cursor-pointer hover:bg-gray-200 transition-colors flex gap-x-2 items-center"
+                className="mt-4 px-5 py-2 rounded-full border border-white text-white hover:bg-white hover:text-black font-semibold cursor-pointer  transition-colors flex gap-x-2 items-center"
                 onClick={() => router.push("/about")}
               >
                 About Me    <HiArrowRight className=" text-md group-hover:translate-x-2 transition-all duration-300" />

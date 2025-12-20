@@ -4,7 +4,7 @@ import {
   HiViewColumns,
   HiEnvelope,
 } from 'react-icons/hi2';
-import { FaHtml5, FaCss3, FaJs, FaReact, FaWordpress, FaBootstrap, FaPhp, FaFacebookF, FaLinkedinIn, FaInstagram } from 'react-icons/fa'
+import { FaHtml5, FaCss3, FaJs, FaReact, FaWordpress, FaBootstrap, FaPhp, FaFacebookF, FaLinkedinIn, FaInstagram, FaGithub } from 'react-icons/fa'
 import { SiNextdotjs, SiFramer, SiTailwindcss } from 'react-icons/si'
 import { RxDesktop, RxReader, RxRocket } from "react-icons/rx"
 
@@ -24,19 +24,24 @@ export const NAVBAR_DATA = [
 
 export const socialLinks = [
   {
-    href: "https://www.facebook.com/profile.php?id=100064805719040&mibextid=ZbWKwL",
+    href: "https://www.facebook.com/pham.thinh.622183",
     icon: <FaFacebookF />,
     label: "Facebook",
   },
   {
-    href: "https://www.linkedin.com/in/th%E1%BB%8Bnh-ph%E1%BA%A1m-86a6382a7/",
+    href: "https://www.linkedin.com/in/thịnh-phạm-86a6382a7",
     icon: <FaLinkedinIn />,
     label: "LinkedIn",
   },
   {
-    href: "https://www.instagram.com/phamthinh30522?igsh=OGY3MTU3OGY1Mw==",
+    href: "https://www.instagram.com/phamthinh30522",
     icon: <FaInstagram />,
     label: "Instagram",
+  },
+  {
+    href: "https://github.com/thinhpham311-dev",
+    icon: <FaGithub />,
+    label: "Github",
   },
 ];
 
