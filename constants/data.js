@@ -7,13 +7,14 @@ import {
 import { FaHtml5, FaCss3, FaJs, FaReact, FaWordpress, FaBootstrap, FaPhp, FaFacebookF, FaLinkedinIn, FaInstagram, FaGithub } from 'react-icons/fa'
 import { SiNextdotjs, SiFramer, SiTailwindcss } from 'react-icons/si'
 import { RxDesktop, RxReader, RxRocket } from "react-icons/rx"
+import { PiCertificateFill } from "react-icons/pi";
 
 // nav data
 export const NAVBAR_DATA = [
   { name: 'home', path: '/', icon: <HiHome /> },
   { name: 'about', path: '/about', icon: <HiUser /> },
-  // { name: 'service', path: '/service', icon: <HiRectangleGroup /> },
-  { name: 'project', path: '/project', icon: <HiViewColumns /> },
+  { name: 'projects', path: '/projects', icon: <HiViewColumns /> },
+  { name: 'certificates', path: '/certificates', icon: <PiCertificateFill /> },
   {
     name: 'contact',
     path: '/contact',
@@ -172,6 +173,20 @@ export const SERVICELIST_DATA = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   }
 ];
+
+export const CERTIFICATE_DATA = [
+  {
+    title: 'Introduction to Cypress Certificate',
+    image: '/certificates/certificates_TAU-11e04e3d.png',
+    src: "https://testautomationu.applitools.com/certificate/?id=11e04e3d"
+  },
+  {
+    title: 'Advanced Cypress Certificate',
+    image: '/certificates/certificates_TAU-6f0c37af.png',
+    src: "https://testautomationu.applitools.com/certificate/?id=6f0c37af"
+  },
+]
+
 export const PROJECTLIST_DATA = {
   slides: [
     {

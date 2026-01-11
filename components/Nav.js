@@ -13,7 +13,7 @@ import { NAVBAR_DATA } from "../constants"
 const Nav = () => {
   const router = useRouter()
   const data = NAVBAR_DATA
-  return <nav className="xl:w-[20%] z-10 lg:w-[30%] md:w-[50%] w-[70%] mx-auto drop-shadow-2xl h-[100px] flex items-center" >
+  return <nav className="xl:w-[25%] z-10 lg:w-[30%] md:w-[50%] w-[70%] mx-auto drop-shadow-2xl h-[100px] flex items-center" >
     <motion.div variants={fadeIn('up', 1)} initial="hidden" animate="show" exit="hidden" className="w-full rounded-full backdrop-blur-ms bg-white/30 px-2">
       <ul className="flex justify-between h-full">
         {
