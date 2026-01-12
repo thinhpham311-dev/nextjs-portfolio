@@ -9,7 +9,7 @@ import "swiper/css"
 import "swiper/css/pagination"
 
 //data
-import { SERVICELIST_DATA } from "../constants"
+import { SERVICELIST_DATA } from "@/constants"
 
 const ServiceSlider = () => {
   const data = SERVICELIST_DATA

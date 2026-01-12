@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { socialLinks } from "../constants/data"
+import { socialLinks } from "@/constants/data"
 
 const Socials = () => {
   return (

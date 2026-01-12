@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+:root {
+  --accent: #a259ff;
+}
 .swiper {
   padding-bottom: 40px !important;
   padding-left: 50px !important;

@@ -5,10 +5,10 @@ import Link from "next/link"
 import { BsDownload, BsGithub } from "react-icons/bs"
 import { motion } from "framer-motion"
 
-import MetaData from "../../components/MetaData"
-import Button from "../../components/Button"
+import MetaData from "@/components/MetaData"
+import Button from "@/components/Button"
 import { fadeIn } from "../../variants"
-import { RESUMELIST_DATA } from "../../constants"
+import { RESUMELIST_DATA } from "@/constants"
 
 const About = () => {
   const [selectedIndex, setSelectedIndex] = useState(0)

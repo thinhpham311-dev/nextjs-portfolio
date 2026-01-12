@@ -1,5 +1,5 @@
 import nodemailer from "nodemailer"
-import { EMAIL, EMAIL_PASS } from "../constants"
+import { EMAIL, EMAIL_PASS } from "@/constants"
 
 const email = EMAIL
 const pass = EMAIL_PASS

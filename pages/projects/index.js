@@ -1,6 +1,6 @@
-import ParticlesContainer from "../../components/ParticlesContainer"
-import ProjectSlider from "../../components/ProjectSlider"
-import MetaData from "../../components/MetaData"
+import ParticlesContainer from "@/components/ParticlesContainer"
+import ProjectSlider from "@/components/ProjectSlider"
+import MetaData from "@/components/MetaData"
 import { motion } from "framer-motion"
 import { fadeIn } from "../../variants"
 

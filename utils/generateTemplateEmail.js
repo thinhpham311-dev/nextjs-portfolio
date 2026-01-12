@@ -1,4 +1,4 @@
-import { CONTACT_MESSAGE_EMAIL } from "../constants"
+import { CONTACT_MESSAGE_EMAIL } from "@/constants"
 
 const msg = CONTACT_MESSAGE_EMAIL
 

@@ -1,7 +1,7 @@
-import Circles from "../../components/Circles"
-import Bulb from "../../components/Bulb"
-import CertificateSlider from "../../components/CertificateSlider"
-import MetaData from "../../components/MetaData"
+import Circles from "@/components/Circles"
+import Bulb from "@/components/Bulb"
+import CertificateSlider from "@/components/CertificateSlider"
+import MetaData from "@/components/MetaData"
 
 import { motion } from "framer-motion"
 import { fadeIn } from "../../variants"

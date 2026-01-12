@@ -11,9 +11,15 @@ export const NavContainer = styled.nav`
   width: 70%;
   drop-shadow: 2xl;
 
-  @media (min-width: 768px) { width: 50%; }
-  @media (min-width: 1024px) { width: 30%; }
-  @media (min-width: 1280px) { width: 25%; }
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+  @media (min-width: 1024px) {
+    width: 30%;
+  }
+  @media (min-width: 1280px) {
+    width: 25%;
+  }
 `
 
 export const MotionWrapper = styled(motion.div)`
@@ -21,7 +27,7 @@ export const MotionWrapper = styled(motion.div)`
   padding: 0 0.5rem;
   backdrop-filter: blur(6px);
   border-radius: 9999px;
-  background: rgba(255,255,255,0.3);
+  background: rgba(255, 255, 255, 0.3);
 `
 
 export const NavList = styled.ul`
@@ -35,7 +41,7 @@ export const NavItem = styled.li`
   padding: 0.5rem 0;
   color: white;
   transition: 0.3s;
-  
+
   &:hover {
     color: var(--accent);
   }
@@ -45,7 +51,7 @@ export const NavLink = styled(Link)`
   display: block;
   padding: 10px;
   border-radius: 9999px;
-  filter: drop-shadow(0 0 8px rgba(0,0,0,0.4));
+  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.4));
   transition: 0.3s;
 
   ${({ $active }) =>
@@ -54,7 +60,7 @@ export const NavLink = styled(Link)`
       background: white;
       color: var(--accent);
     `}
-  
+
   span {
     font-size: 1.125rem;
   }

@@ -1,10 +1,10 @@
 import { useState } from "react"
 
 //components
-import MetaData from "../../components/MetaData"
-import { Input, InputArea } from "../../components/Input"
-import Button from "../../components/Button"
-import Message from "../../components/Message"
+import MetaData from "@/components/MetaData"
+import { Input, InputArea } from "@/components/Input"
+import Button from "@/components/Button"
+import Message from "@/components/Message"
 
 //icons
 import { BsSendFill } from "react-icons/bs"

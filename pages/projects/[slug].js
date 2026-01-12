@@ -1,12 +1,12 @@
 "use client"
 
-import MetaData from "../../components/MetaData"
-import ParticlesContainer from "../../components/ParticlesContainer"
-import ProjectDetail from "../../components/ProjectDetail"
+import MetaData from "@/components/MetaData"
+import ParticlesContainer from "@/components/ParticlesContainer"
+import ProjectDetail from "@/components/ProjectDetail"
 import { motion } from "framer-motion"
-import { fadeIn } from "../../variants"
+import { fadeIn } from "@/variants"
 import { useRouter } from "next/router"
-import { PROJECTLIST_DATA } from "../../constants/data"
+import { PROJECTLIST_DATA } from "@/constants/data"
 import { useEffect, useState } from "react"
 
 export default function ProjectDetailPage() {

@@ -8,7 +8,7 @@ import { Pagination, Navigation } from "swiper/modules"
 import { FiExternalLink } from "react-icons/fi"
 import { FaUserClock } from "react-icons/fa"
 import { LoadingImage } from "./Loading"
-import { PROJECTLIST_DATA } from "../constants"
+import { PROJECTLIST_DATA } from "@/constants"
 
 const projects = PROJECTLIST_DATA
 const ProjectSlider = () => {
