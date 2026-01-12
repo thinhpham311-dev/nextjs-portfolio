@@ -1,5 +1,5 @@
 import TopLeftImg from "./TopLeftImg"
-import Nav from "./Nav"
+import Navbar from "./Navbar"
 import Header from "./Header"
 import Circles from "./Circles"
 
@@ -17,7 +17,7 @@ const Layout = ({ children, fontSora }) => {
           <TopLeftImg />
           <Header />
           {children}
-          <Nav />
+          <Navbar />
           <Circles />
         </div>
       </div>
