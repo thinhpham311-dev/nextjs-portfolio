@@ -1,7 +1,7 @@
 "use client"
 
 import MetaData from "@/components/MetaData"
-import ParticlesContainer from "@/components/ParticlesContainer"
+import ParticlesSection from "@/components/ParticlesSection"
 import ProjectDetail from "@/components/ProjectDetail"
 import { motion } from "framer-motion"
 import { fadeIn } from "@/variants"
@@ -35,7 +35,7 @@ export default function ProjectDetailPage() {
         description="Portfolio cá nhân của Thinh Pham - Web Developer"
       />
       <div className="relative h-full">
-        <ParticlesContainer />
+        <ParticlesSection />
         <div className="container z-50 mx-auto">
           <motion.div
             className="mx-auto w-full"

@@ -1,9 +1,9 @@
 import Circles from "@/components/Circles"
 import Bulb from "@/components/Bulb"
-import ServiceSlider from "@/components/ServiceSlider"
+// import ServiceSlider from "@/components/ServiceSlider"
 
 import { motion } from "framer-motion"
-import { fadeIn } from "../../variants"
+import { fadeIn } from "@/variants"
 
 const Services = () => {
   return (
@@ -28,9 +28,8 @@ const Services = () => {
               animate="show"
               exit="hidden"
             >
-              I provide creative and efficient solutions in Web Development, 
-              and Automation Testing, helping projects come to life with clean design and high
-              performance.{" "}
+              I provide creative and efficient solutions in Web Development, and Automation Testing,
+              helping projects come to life with clean design and high performance.{" "}
             </motion.p>
           </div>
           <motion.div
@@ -40,7 +39,7 @@ const Services = () => {
             animate="show"
             exit="hidden"
           >
-            <ServiceSlider />
+            {/* <ServiceSlider /> */}
           </motion.div>
         </div>
       </div>

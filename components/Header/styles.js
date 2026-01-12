@@ -1,3 +1,4 @@
+import Link from "next/link"
 import styled from "styled-components"
 import { motion } from "framer-motion"
 
@@ -11,18 +12,9 @@ const HeaderWrapper = styled.header`
   padding-right: 0;
 `
 
-const Container = styled(motion.div)`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.75rem; /* 3 in Tailwind */
-  margin: 0 auto;
-
-  @media (min-width: 1280px) {
-    flex-direction: row;
-  }
-`
+const Container = styled(motion.div).attrs(() => ({
+  className: "container mx-auto flex items-center w-full justify-between gap-3",
+}))``
 
 const Logo = styled.div`
   display: flex;
@@ -31,16 +23,19 @@ const Logo = styled.div`
   gap: 1.25rem; /* 5 in Tailwind */
 `
 
-const ContactLink = styled.a`
+const ContactLink = styled(Link)`
   display: flex;
   align-items: center;
-  font-size: 1rem; /* text-lg in Tailwind */
-  margin-right: 0.25rem;
+  gap: 8px;
+  font-size: 16px;
+  margin-right: 4px;
 
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
   span {
-    margin-left: 0.25rem;
-    font-size: 13px;
-    font-weight: 100;
+    font-size: 13spx;
+    font-weight: 500;
   }
 `
 

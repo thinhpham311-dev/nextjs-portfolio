@@ -26,6 +26,7 @@ const BaseButton = styled.button`
 export const buttonVariants = cva("", {
   variants: {
     variant: {
+      link: "bg-transparent",
       default: "bg-accent text-white hover:bg-accent/80",
       secondary: "bg-gray-200 text-black hover:bg-gray-300",
       outline: "border border-accent text-accent hover:bg-accent/10",

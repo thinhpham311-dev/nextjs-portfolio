@@ -1,6 +1,6 @@
-import { motion } from "framer-motion"
+import { TopPanel, MiddlePanel, BottomPanel } from "./styles"
 
-const transitionvariants = {
+const transitionVariants = {
   initial: {
     x: "100%",
     width: "100%",
@@ -18,9 +18,8 @@ const transitionvariants = {
 const Transition = () => {
   return (
     <>
-      <motion.div
-        className="fixed right-full top-0 z-30 h-1/3 w-screen bg-[#2e2257]"
-        variants={transitionvariants}
+      <TopPanel
+        variants={transitionVariants}
         initial="initial"
         animate="animate"
         exit="exit"
@@ -29,10 +28,10 @@ const Transition = () => {
           duration: 0.6,
           ease: "easeInOut",
         }}
-      ></motion.div>
-      <motion.div
-        className="fixed right-full top-1/3 z-30 h-1/3 w-screen -translate-y-1/3 bg-[#3d2d71]"
-        variants={transitionvariants}
+      />
+
+      <MiddlePanel
+        variants={transitionVariants}
         initial="initial"
         animate="animate"
         exit="exit"
@@ -41,10 +40,10 @@ const Transition = () => {
           duration: 0.6,
           ease: "easeInOut",
         }}
-      ></motion.div>
-      <motion.div
-        className="fixed bottom-0 right-full z-30 h-1/3 w-screen bg-[#4b3792]"
-        variants={transitionvariants}
+      />
+
+      <BottomPanel
+        variants={transitionVariants}
         initial="initial"
         animate="animate"
         exit="exit"
@@ -53,7 +52,7 @@ const Transition = () => {
           duration: 0.6,
           ease: "easeInOut",
         }}
-      ></motion.div>
+      />
     </>
   )
 }

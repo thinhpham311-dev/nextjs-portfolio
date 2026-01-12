@@ -80,7 +80,9 @@ const About = () => {
               className="mb-3 flex h-[50px] items-center justify-center gap-x-4 text-white lg:gap-x-6 xl:justify-start xl:gap-x-8"
             >
               {data.map((item, i) => (
-                <div
+                <Button
+                  variant="link"
+                  size="sm"
                   key={i}
                   onClick={() => setSelectedIndex(i)}
                   className={`relative cursor-pointer capitalize after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-8 after:bg-white xl:text-lg ${
@@ -90,7 +92,7 @@ const About = () => {
                   }`}
                 >
                   {item.title}
-                </div>
+                </Button>
               ))}
             </motion.div>
 

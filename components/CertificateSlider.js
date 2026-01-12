@@ -11,7 +11,7 @@ import "swiper/css/pagination"
 //data
 import { SERVICELIST_DATA } from "@/constants"
 
-const ServiceSlider = () => {
+const CertificateSlider = () => {
   const data = SERVICELIST_DATA
   return (
     <>
@@ -57,4 +57,4 @@ const ServiceSlider = () => {
   )
 }
 
-export default ServiceSlider
+export default CertificateSlider

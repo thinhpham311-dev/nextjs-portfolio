@@ -1,7 +1,7 @@
 //component
 import ProjectBtn from "../components/ProjectsBtn"
 import Avatar from "../components/Avatar"
-import ParticlesContainer from "../components/ParticlesContainer"
+import ParticlesSection from "../components/ParticlesSection"
 import MetaData from "../components/MetaData"
 //framer motion
 import { motion } from "framer-motion"
@@ -17,7 +17,7 @@ const Home = () => {
         description="Welcome to the portfolio of Thinh Pham, a passionate and creative web developer specializing in building modern, responsive websites using React, Next.js, and JavaScript."
       />
       <div className="relative z-10 h-full py-[30px] xl:mb-0">
-        <ParticlesContainer />
+        <ParticlesSection />
         <div className="container mx-auto flex h-full justify-between gap-x-[10%] px-[2vw] text-center xl:pt-0 xl:text-left">
           <div className="flex w-full flex-1 flex-col justify-center xl:w-[45%]">
             <motion.h1

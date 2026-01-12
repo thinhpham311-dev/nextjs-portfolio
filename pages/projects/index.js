@@ -1,4 +1,4 @@
-import ParticlesContainer from "@/components/ParticlesContainer"
+import ParticlesSection from "@/components/ParticlesSection"
 import ProjectSlider from "@/components/ProjectSlider"
 import MetaData from "@/components/MetaData"
 import { motion } from "framer-motion"
@@ -12,7 +12,7 @@ const Project = () => {
         description="Discover projects developed by Thinh Pham, demonstrating expertise in building responsive and user-focused web applications."
       />
       <div className="relative flex h-full items-center">
-        <ParticlesContainer />
+        <ParticlesSection />
         <div className="container mx-auto">
           <div className="mb-0 xl:mb-5">
             <motion.h1
