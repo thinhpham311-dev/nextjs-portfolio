@@ -1,15 +1,15 @@
-import Link from "next/link";
+import Link from "next/link"
 import { socialLinks } from "../constants/data"
 
 const Socials = () => {
   return (
-    <div className="social-list xl:mx-0 mx-auto xl:w-[15%] z-10 lg:w-[40%] md:w-[50%] w-[90%]">
-      <ul className="flex lg:justify-end justify-center gap-3">
+    <div className="social-list z-10 mx-auto w-[90%] md:w-[50%] lg:w-[40%] xl:mx-0 xl:w-[15%]">
+      <ul className="flex justify-center gap-3 lg:justify-end">
         {socialLinks.map(({ href, icon, label }) => (
           <li key={label}>
             <Link
               href={href}
-              className="font-thin border-[0.5px] border-white hover:bg-white hover:text-black transition-all duration-500 flex items-center justify-center rounded-full h-10 w-10 text-[18px]"
+              className="flex h-10 w-10 items-center justify-center rounded-full border-[0.5px] border-white text-[18px] font-thin transition-all duration-500 hover:bg-white hover:text-black"
               aria-label={label}
               target="_blank"
               rel="noopener noreferrer"
@@ -20,7 +20,7 @@ const Socials = () => {
         ))}
       </ul>
     </div>
-  );
-};
+  )
+}
 
-export default Socials;
+export default Socials

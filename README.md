@@ -10,8 +10,8 @@ A modern web application built with **Next.js**, bootstrapped using `create-next
 
 Ensure you have the following installed on your machine:
 
-* **Node.js** (v16 or later recommended)
-* **npm**, **yarn**, or **pnpm**
+- **Node.js** (v16 or later recommended)
+- **npm**, **yarn**, or **pnpm**
 
 ### Installation
 
@@ -54,8 +54,8 @@ public/              # Static assets
 styles/              # Global and component styles
 ```
 
-* **`pages/index.js`**: Entry point of the application UI
-* **`pages/api/*`**: Server-side API routes mapped to `/api/*`
+- **`pages/index.js`**: Entry point of the application UI
+- **`pages/api/*`**: Server-side API routes mapped to `/api/*`
 
 ---
 
@@ -83,9 +83,9 @@ API routes run on the server and can be used for handling form submissions, auth
 
 Useful resources to deepen your understanding of Next.js:
 
-* **Next.js Documentation** – Core concepts, features, and APIs
-* **Learn Next.js** – Interactive official tutorial
-* **Next.js GitHub Repository** – Source code, issues, and community contributions
+- **Next.js Documentation** – Core concepts, features, and APIs
+- **Learn Next.js** – Interactive official tutorial
+- **Next.js GitHub Repository** – Source code, issues, and community contributions
 
 ---
 

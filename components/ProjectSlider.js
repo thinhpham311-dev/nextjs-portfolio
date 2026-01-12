@@ -1,38 +1,39 @@
-'use client';
+"use client"
 
-import { useState } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation } from 'swiper/modules';
-import { FiExternalLink } from 'react-icons/fi';
-import { FaUserClock } from 'react-icons/fa';
-import { LoadingImage } from './Loading';
-import { PROJECTLIST_DATA } from '../constants';
+import { useState } from "react"
+import Image from "next/image"
+import Link from "next/link"
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Pagination, Navigation } from "swiper/modules"
+import { FiExternalLink } from "react-icons/fi"
+import { FaUserClock } from "react-icons/fa"
+import { LoadingImage } from "./Loading"
+import { PROJECTLIST_DATA } from "../constants"
 
-const projects = PROJECTLIST_DATA;
+const projects = PROJECTLIST_DATA
 const ProjectSlider = () => {
-  const companyKeys = projects.slides.map((slide) => slide.companyKey);
-  const [selectedCompanyKey, setSelectedCompanyKey] = useState(companyKeys[0]);
+  const companyKeys = projects.slides.map((slide) => slide.companyKey)
+  const [selectedCompanyKey, setSelectedCompanyKey] = useState(companyKeys[0])
 
-  const selectedSlide = projects.slides.find((slide) => slide.companyKey === selectedCompanyKey);
-  const filteredImages = selectedSlide?.images || [];
+  const selectedSlide = projects.slides.find((slide) => slide.companyKey === selectedCompanyKey)
+  const filteredImages = selectedSlide?.images || []
 
   const getCompanyName = (key) =>
-    projects.slides.find((slide) => slide.companyKey === key)?.companyName || 'Unknown';
+    projects.slides.find((slide) => slide.companyKey === key)?.companyName || "Unknown"
 
   return (
-    <div className="w-full max-w-[1400px] mx-auto px-4">
+    <div className="mx-auto w-full max-w-[1400px] px-4">
       {/* Tabs */}
-      <div className="flex flex-wrap justify-center gap-3 mb-6 relative z-50">
+      <div className="relative z-50 mb-6 flex flex-wrap justify-center gap-3">
         {companyKeys.map((key) => (
           <button
             key={key}
             onClick={() => setSelectedCompanyKey(key)}
-            className={` rounded-full text-sm xl:text-lg font-semibold capitalize transition-all relative after:w-8 after:h-[2px] after:absolute after:-bottom-1 after:left-0 ${selectedCompanyKey === key
-              ? 'text-accent after:!bg-accent after:w-full after:transition-all after:duration-300'
-              : 'bg-transparent text-white after:bg-white'
-              }`}
+            className={`relative rounded-full text-sm font-semibold capitalize transition-all after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-8 xl:text-lg ${
+              selectedCompanyKey === key
+                ? "text-accent after:w-full after:!bg-accent after:transition-all after:duration-300"
+                : "bg-transparent text-white after:bg-white"
+            }`}
           >
             {getCompanyName(key)}
           </button>
@@ -55,9 +56,9 @@ const ProjectSlider = () => {
         {filteredImages.length > 0 ? (
           filteredImages.map((image, idx) => (
             <SwiperSlide key={idx}>
-              <div className="relative overflow-hidden rounded-lg group bg-black flex items-center justify-center">
+              <div className="group relative flex items-center justify-center overflow-hidden rounded-lg bg-black">
                 {/* Company Logo */}
-                <div className="absolute top-2 right-2 bg-black bg-opacity-70 p-2 rounded-full z-10">
+                <div className="absolute right-2 top-2 z-10 rounded-full bg-black bg-opacity-70 p-2">
                   <a href={image?.src} target="_blank" rel="noopener noreferrer">
                     {image?.companyImage ? (
                       <Image
@@ -79,7 +80,7 @@ const ProjectSlider = () => {
                   alt={image.title}
                   width={500}
                   height={200}
-                  className="object-contain w-full h-full"
+                  className="h-full w-full object-contain"
                 />
 
                 {/* Overlay Link */}
@@ -87,9 +88,9 @@ const ProjectSlider = () => {
                   href={image.src}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-violet-500 to-fuchsia-500 opacity-0 group-hover:opacity-80 transition-all duration-300"
+                  className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-violet-500 to-fuchsia-500 opacity-0 transition-all duration-300 group-hover:opacity-80"
                 >
-                  <span className="text-white font-semibold flex items-center gap-2">
+                  <span className="flex items-center gap-2 font-semibold text-white">
                     Visit Page <FiExternalLink />
                   </span>
                 </Link>
@@ -97,13 +98,11 @@ const ProjectSlider = () => {
             </SwiperSlide>
           ))
         ) : (
-          <div className="text-center py-10 text-gray-500">
-            No project found for this company.
-          </div>
+          <div className="py-10 text-center text-gray-500">No project found for this company.</div>
         )}
       </Swiper>
     </div>
-  );
-};
+  )
+}
 
-export default ProjectSlider;
+export default ProjectSlider
