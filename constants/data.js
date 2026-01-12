@@ -15,12 +15,15 @@ import {
 import { SiNextdotjs, SiFramer, SiTailwindcss } from "react-icons/si"
 import { RxDesktop, RxReader, RxRocket } from "react-icons/rx"
 import { PiCertificateFill } from "react-icons/pi"
+import { MdMiscellaneousServices } from "react-icons/md"
 
 // nav data
 export const NAVBAR_DATA = [
   { name: "home", path: "/", icon: <HiHome /> },
   { name: "about", path: "/about", icon: <HiUser /> },
+
   { name: "projects", path: "/projects", icon: <HiViewColumns /> },
+  // { name: "services", path: "/services", icon: <MdMiscellaneousServices /> },
   { name: "certificates", path: "/certificates", icon: <PiCertificateFill /> },
   {
     name: "contact",
@@ -165,17 +168,12 @@ export const RESUMELIST_DATA = [
 export const SERVICELIST_DATA = [
   {
     icon: <RxDesktop />,
-    title: "Development",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
-    icon: <RxReader />,
-    title: "Copywriting",
+    title: "Web Development",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
     icon: <RxRocket />,
-    title: "SEO",
+    title: "Automation Testing",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
 ]

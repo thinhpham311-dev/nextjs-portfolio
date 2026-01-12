@@ -41,27 +41,14 @@ export const NavItem = styled.li`
   padding: 0.5rem 0;
   color: white;
   transition: 0.3s;
-
-  &:hover {
-    color: var(--accent);
-  }
 `
 
-export const NavLink = styled(Link)`
+export const NavLink = styled(Link).attrs(({ $active }) => ({
+  className: $active ? "bg-white text-accent" : "text-white hover:text-accent",
+}))`
   display: block;
   padding: 10px;
   border-radius: 9999px;
   filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.4));
   transition: 0.3s;
-
-  ${({ $active }) =>
-    $active &&
-    css`
-      background: white;
-      color: var(--accent);
-    `}
-
-  span {
-    font-size: 1.125rem;
-  }
 `

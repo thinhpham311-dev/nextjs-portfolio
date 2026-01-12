@@ -28,8 +28,9 @@ const Services = () => {
               animate="show"
               exit="hidden"
             >
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-              has been the industry's standard dummy text ever since the 1500s
+              I provide creative and efficient solutions in Web Development, 
+              and Automation Testing, helping projects come to life with clean design and high
+              performance.{" "}
             </motion.p>
           </div>
           <motion.div

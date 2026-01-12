@@ -9,7 +9,7 @@ import { Pagination } from "swiper/modules"
 import { CERTIFICATE_DATA } from "@/constants"
 import { SlideCard, IconWrap, Content, ArrowBox } from "./styles"
 
-const ServiceSlider = () => {
+const CertificateSlider = () => {
   const data = CERTIFICATE_DATA
 
   return (
@@ -48,4 +48,4 @@ const ServiceSlider = () => {
   )
 }
 
-export default ServiceSlider
+export default CertificateSlider

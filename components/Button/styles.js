@@ -13,9 +13,11 @@ const BaseButton = styled.button`
   transition: all 0.2s;
   user-select: none;
 
-  &:active { transform: scale(.98); }
+  &:active {
+    transform: scale(0.98);
+  }
   &:disabled {
-    opacity: .5;
+    opacity: 0.5;
     pointer-events: none;
   }
 `
@@ -42,17 +44,17 @@ export const buttonVariants = cva("", {
   },
 })
 
-export const StyledButton = styled(BaseButton).attrs(
-  ({ variant, size, className }) => ({
-    className: cn(buttonVariants({ variant, size }), className),
-  }),
-)``
+export const StyledButton = styled(BaseButton).attrs(({ variant, size, className }) => ({
+  className: cn(buttonVariants({ variant, size }), className),
+}))``
 
 export const Spinner = styled(VscLoading)`
   margin-right: 0.75rem;
   animation: spin 1s linear infinite;
 
   @keyframes spin {
-    to { transform: rotate(360deg); }
+    to {
+      transform: rotate(360deg);
+    }
   }
 `
