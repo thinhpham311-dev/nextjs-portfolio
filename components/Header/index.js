@@ -7,7 +7,7 @@ import { fadeIn } from "@/variants"
 import { BsPhoneFill } from "react-icons/bs"
 import { MdEmail } from "react-icons/md"
 // styled-components
-import { HeaderWrapper, Container, Logo, ContactLink } from "./styles"
+import { HeaderWrapper, Container, Logo, ContactLink, ContactLinkText } from "./styles"
 
 const Header = () => {
   return (
@@ -16,12 +16,12 @@ const Header = () => {
         <Logo>
           <ContactLink href="tel:0702895474" passHref>
             <BsPhoneFill />
-            <span> 0702895474</span>
+            <ContactLinkText> 0702895474</ContactLinkText>
           </ContactLink>
 
           <ContactLink href="mailto:thinhpham67ag@gmail.com" passHref>
             <MdEmail />
-            <span> thinhpham67ag@gmail.com</span>
+            <ContactLinkText> thinhpham67ag@gmail.com</ContactLinkText>
           </ContactLink>
         </Logo>
         <Social />

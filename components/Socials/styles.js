@@ -3,21 +3,10 @@ import Link from "next/link"
 
 const Wrapper = styled.div`
   z-index: 10;
-  margin: 0 auto;
-  width: 90%;
-
-  @media (min-width: 768px) {
-    width: 50%;
-  }
-
-  @media (min-width: 1024px) {
-    width: 40%;
-  }
 
   @media (min-width: 1280px) {
     margin-left: 0;
     margin-right: 0;
-    width: 15%;
   }
 `
 

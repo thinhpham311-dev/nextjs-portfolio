@@ -12,7 +12,7 @@ export const NavContainer = styled.nav`
   drop-shadow: 2xl;
 
   @media (min-width: 768px) {
-    width: 50%;
+    width: 40%;
   }
   @media (min-width: 1024px) {
     width: 30%;
