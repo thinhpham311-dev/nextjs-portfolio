@@ -26,14 +26,6 @@ const ButtonLink = styled(Link)`
   align-items: center;
   justify-content: center;
 
-  width: 150px;
-  height: 150px;
-
-  background-image: url("/circleStar.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
   @media (min-width: 1280px) {
     margin-left: 0;
     width: 185px;

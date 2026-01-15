@@ -5,7 +5,7 @@ import ParticlesSection from "../components/ParticlesSection"
 import MetaData from "../components/MetaData"
 //framer motion
 import { motion } from "framer-motion"
-
+import Scene from "@/components/Scene"
 //variants
 import { fadeIn } from "../variants"
 
@@ -57,7 +57,9 @@ const Home = () => {
             transition={{ duration: 1, ease: "easeInOut" }}
             className="hidden h-full max-h-[700px] w-full max-w-[45%] flex-col justify-center xl:flex"
           >
-            <Avatar _w={737} _h={678} source="/avatar-bg-thinhpham.jpg" />
+            <Scene />
+
+            {/* <Avatar _w={737} _h={678} source="/avatar-bg-thinhpham.jpg" /> */}
           </motion.div>
         </div>
       </div>
