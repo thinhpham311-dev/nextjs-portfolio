@@ -1,13 +1,13 @@
 import Image from "next/image"
-import { BulbWrapper, ImageWrapper } from "./styles"
+import { Wrapper, ImageWrapper } from "./styles"
 
 const Bulb = () => {
   return (
-    <BulbWrapper>
+    <Wrapper>
       <ImageWrapper>
         <Image src="/bulb.png" width={260} height={200} alt="bulb" />
       </ImageWrapper>
-    </BulbWrapper>
+    </Wrapper>
   )
 }
 

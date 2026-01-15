@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-const BulbWrapper = styled.div`
+const Wrapper = styled.div`
   position: absolute;
   left: -9rem; /* -36 => 36 * 0.25rem = 9rem */
   bottom: -3rem; /* -12 => 12 * 0.25rem = 3rem */
@@ -36,4 +36,4 @@ const ImageWrapper = styled.div`
   }
 `
 
-export { BulbWrapper, ImageWrapper }
+export { Wrapper, ImageWrapper }

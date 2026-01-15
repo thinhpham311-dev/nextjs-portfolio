@@ -84,7 +84,7 @@ const ProjectSlider = () => {
                   alt={image.title}
                   width={500}
                   height={200}
-                  className="object-contain"
+                  className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 object-contain"
                 />
 
                 <OverlayLink

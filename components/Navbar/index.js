@@ -2,14 +2,14 @@ import { useRouter } from "next/router"
 import { fadeIn } from "@/variants"
 import { NAVBAR_DATA } from "@/constants"
 
-import { NavContainer, MotionWrapper, NavList, NavItem, NavLink } from "./styles"
+import { Container, Wrapper, NavList, NavItem, NavLink } from "./styles"
 
 const Navbar = () => {
   const router = useRouter()
 
   return (
-    <NavContainer>
-      <MotionWrapper variants={fadeIn("up", 1)} initial="hidden" animate="show" exit="hidden">
+    <Wrapper variants={fadeIn("up", 1)} initial="hidden" animate="show" exit="hidden">
+      <Container>
         <NavList>
           {NAVBAR_DATA.map((item) => {
             const isActive =
@@ -24,8 +24,8 @@ const Navbar = () => {
             )
           })}
         </NavList>
-      </MotionWrapper>
-    </NavContainer>
+      </Container>
+    </Wrapper>
   )
 }
 

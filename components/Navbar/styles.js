@@ -2,14 +2,14 @@ import styled, { css } from "styled-components"
 import { motion } from "framer-motion"
 import Link from "next/link"
 
-export const NavContainer = styled.nav`
-  z-index: 10;
+export const Wrapper = styled(motion.nav)`
   margin: 0 auto;
   height: 100px;
   display: flex;
   align-items: center;
   width: 70%;
   drop-shadow: 2xl;
+  z-index: 10;
 
   @media (min-width: 768px) {
     width: 40%;
@@ -22,7 +22,7 @@ export const NavContainer = styled.nav`
   }
 `
 
-export const MotionWrapper = styled(motion.div)`
+export const Container = styled.div`
   width: 100%;
   padding: 0 0.5rem;
   backdrop-filter: blur(6px);
