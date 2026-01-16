@@ -18,8 +18,8 @@ const Home = () => {
       />
       <div className="relative z-10 h-full py-[30px] xl:mb-0">
         <ParticlesSection />
-        <div className="container mx-auto flex h-full justify-between gap-x-[10%] px-[2vw] text-center xl:pt-0 xl:text-left">
-          <div className="flex w-full flex-1 flex-col justify-center xl:w-[45%]">
+        <div className="container relative mx-auto flex h-full justify-between gap-x-[5%] text-center xl:pt-0 xl:text-left">
+          <div className="flex w-full flex-1 flex-col justify-center xl:w-[50%] lg:w-[50%] md:w-[50%]">
             <motion.h1
               variants={fadeIn("down", 0.2)}
               initial="hidden"
@@ -37,7 +37,7 @@ const Home = () => {
               className="text-yellow z-10 mx-auto mb-10 max-w-sm xl:mx-0 xl:mb-12 xl:max-w-xl"
             >
               Web Developer experienced in developing websites, using strong technical skills to
-              enhance aesthetics and create engaging user experiences.{" "}
+              enhance aesthetics and create engaging user experiences.
             </motion.p>
             <motion.div
               variants={fadeIn("down", 0.5)}
@@ -55,7 +55,7 @@ const Home = () => {
             animate="show"
             exit="hidden"
             transition={{ duration: 1, ease: "easeInOut" }}
-            className="hidden h-full max-h-[700px] w-full max-w-[45%] flex-col justify-center xl:flex"
+            className="absolute -right-[15%] top-0 hidden h-full max-h-[700px] w-full max-w-[70%] flex-col justify-center xl:flex"
           >
             <Scene />
 
