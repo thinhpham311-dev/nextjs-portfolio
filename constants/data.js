@@ -13,9 +13,8 @@ import {
   FaGithub,
 } from "react-icons/fa"
 import { SiNextdotjs, SiFramer, SiTailwindcss } from "react-icons/si"
-import { RxDesktop, RxReader, RxRocket } from "react-icons/rx"
+import { RxDesktop, RxRocket } from "react-icons/rx"
 import { PiCertificateFill } from "react-icons/pi"
-import { MdMiscellaneousServices } from "react-icons/md"
 
 // nav data
 export const NAVBAR_DATA = [
@@ -121,7 +120,7 @@ export const RESUMELIST_DATA = [
     info: [
       {
         title: "Front End Developer - TechVSI company",
-        stage: "01/2023 - 12/2023",
+        stage: "01/2023 - 07/2023",
       },
       {
         title: "Web Developer - Antking Company",
