@@ -28,7 +28,7 @@ const Breadcrumb = memo(({ title, toggleFullscreen }) => (
         <span className="ml-2">/</span>
       </li>
       <li>
-        <Link href="/project" className="hover:underline">
+        <Link href="/projects" className="hover:underline">
           Projects
         </Link>
         <span className="ml-2">/</span>
@@ -106,7 +106,7 @@ const ProjectNavigation = ({ previousProject, nextProject }) => (
   <div className="container mx-auto mt-10 flex items-center justify-between border-t px-0 py-3">
     {previousProject ? (
       <Link
-        href={`/project/${previousProject.slug}`}
+        href={`/projects/${previousProject.slug}`}
         className="text-white-700 flex items-center space-x-1 text-sm hover:underline"
       >
         <MdOutlineChevronLeft size={22} />{" "}
@@ -117,7 +117,7 @@ const ProjectNavigation = ({ previousProject, nextProject }) => (
     )}
     {nextProject ? (
       <Link
-        href={`/project/${nextProject.slug}`}
+        href={`/projects/${nextProject.slug}`}
         className="text-white-700 flex items-center space-x-1 text-sm hover:underline"
       >
         <span className="font-bold">{nextProject.title}</span> <MdOutlineChevronRight size={22} />

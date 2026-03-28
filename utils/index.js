@@ -1,4 +1,5 @@
 export * from "./api"
 export * from "./generateTemplateEmail"
+export * from "./projects"
 export * from "./validateForm"
 export * from "./style"

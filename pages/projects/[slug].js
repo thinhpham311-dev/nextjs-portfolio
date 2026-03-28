@@ -6,27 +6,11 @@ import ProjectDetail from "@/components/ProjectDetail"
 import { motion } from "framer-motion"
 import { fadeIn } from "@/variants"
 import { useRouter } from "next/router"
-import { PROJECTLIST_DATA } from "@/constants/data"
-import { useEffect, useState } from "react"
+import { getProjectSiblings } from "@/utils"
 
 export default function ProjectDetailPage() {
   const { query } = useRouter()
-
-  const [project, setProject] = useState(null)
-  const [previousProject, setPreviousProject] = useState(null)
-  const [nextProject, setNextProject] = useState(null)
-
-  useEffect(() => {
-    if (query?.slug) {
-      const allProjects = PROJECTLIST_DATA.slides.flatMap((slide) => slide.images)
-      const currentProject = allProjects.find((p) => p.slug === query.slug)
-      const currentIndex = allProjects.findIndex((p) => p.slug === query.slug)
-
-      setProject(currentProject)
-      setPreviousProject(allProjects[currentIndex - 1] || null)
-      setNextProject(allProjects[currentIndex + 1] || null)
-    }
-  }, [query.slug])
+  const { project, previousProject, nextProject } = getProjectSiblings(query.slug)
 
   return (
     <>

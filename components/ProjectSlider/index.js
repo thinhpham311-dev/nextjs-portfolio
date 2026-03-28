@@ -10,7 +10,7 @@ import { FiExternalLink } from "react-icons/fi"
 import { FaUserClock } from "react-icons/fa"
 
 import { LoadingImage } from "@/components/Loading"
-import { PROJECTLIST_DATA } from "@/constants"
+import { getProjectsByCompanyKey, projectCompanyOptions } from "@/utils"
 import {
   Container,
   Tabs,
@@ -21,22 +21,14 @@ import {
   EmptyState,
 } from "./styles"
 
-const projects = PROJECTLIST_DATA
-
 const ProjectSlider = () => {
-  const companyKeys = projects.slides.map((slide) => slide.companyKey)
-  const [selectedCompanyKey, setSelectedCompanyKey] = useState(companyKeys[0])
-
-  const selectedSlide = projects.slides.find((slide) => slide.companyKey === selectedCompanyKey)
-  const filteredImages = selectedSlide?.images || []
-
-  const getCompanyName = (key) =>
-    projects.slides.find((slide) => slide.companyKey === key)?.companyName || "Unknown"
+  const [selectedCompanyKey, setSelectedCompanyKey] = useState(projectCompanyOptions[0]?.key || "")
+  const filteredImages = getProjectsByCompanyKey(selectedCompanyKey)
 
   return (
     <Container>
       <Tabs>
-        {companyKeys.map((key) => (
+        {projectCompanyOptions.map(({ key, name }) => (
           <Button
             variant="link"
             size="sm"
@@ -48,7 +40,7 @@ const ProjectSlider = () => {
                 : "bg-transparent text-white after:bg-white"
             }`}
           >
-            {getCompanyName(key)}
+            {name}
           </Button>
         ))}
       </Tabs>
@@ -66,8 +58,8 @@ const ProjectSlider = () => {
         }}
       >
         {filteredImages.length > 0 ? (
-          filteredImages.map((image, idx) => (
-            <SwiperSlide key={idx}>
+          filteredImages.map((image) => (
+            <SwiperSlide key={image.slug}>
               <SlideCard>
                 <CompanyBadge>
                   <Link href={image?.src} target="_blank" rel="noopener noreferrer">
